@@ -321,7 +321,7 @@
 
         // Load dataset CSV
         async function loadDataset(dataset) {
-            const csvPath = `./${dataset}/mapping_${dataset}.csv`;
+            const csvPath = `../cifar10_raw/${dataset}/mapping_${dataset}.csv`;
             
             try {
                 showLoading('A');
@@ -389,7 +389,7 @@
 
         // Display result
         function displayResult(panel, row) {
-            const imagePath = `./${currentDataset}/${row.filename}`;
+            const imagePath = `../cifar10_raw/${currentDataset}/${row.filename}`;
             
             const html = `
                 <div class="image-container">
